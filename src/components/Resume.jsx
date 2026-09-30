@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ResumeModal from "./ResumeModal.jsx";
+import { IconEye, IconDownload } from "./Icons.jsx";
 
 function Resume() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -27,14 +28,16 @@ function Resume() {
               rel="noreferrer"
               onClick={handleViewClick}
             >
-              View Resume
+              <IconEye size={16} style={{ marginRight: "8px" }} />
+              <span>View Resume</span>
             </a>
             <a
               className="button"
               href="/resume/Kritika_Roy_Resume.pdf"
               download="Kritika_Roy_Resume.pdf"
             >
-              Download Resume
+              <IconDownload size={16} style={{ marginRight: "8px" }} />
+              <span>Download Resume</span>
             </a>
           </div>
         </div>

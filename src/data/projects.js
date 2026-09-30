@@ -1,13 +1,33 @@
 const projects = [
   {
+    id: 17,
+    name: "Astrochange",
+    url: "https://astrochange.com/",
+    image: "/images/astrochange.jpg",
+    description:
+      "Developed responsive celestial web application interfaces, interactive zodiac trait discovery forms, mobile-first layouts, and smooth carousel transitions.",
+    type: "Astrology & Lifestyle Web App",
+    technologies: ["HTML5", "CSS3", "Bootstrap 5", "JavaScript", "Responsive UI"],
+  },
+  {
+    id: 18,
+    name: "Balloon Antics",
+    url: "https://balloonantics.com.au/",
+    image: "/images/balloonantics.jpg",
+    description:
+      "Built with HTML5, CSS, and JavaScript, including animations. Prompts were generated and refined using the Claude AI tool to craft playful party magician layouts and interactive booking flows.",
+    type: "Kids Entertainment & Events",
+    technologies: ["HTML5", "Tailwind CSS", "JavaScript", "Animations", "Claude AI"],
+  },
+  {
     id: 1,
     name: "AviatorJob",
     url: "https://aviatorjob.com",
     image: "/images/aviatorjob.jpg",
     description:
-      "Developed responsive HTML5/CSS3 layouts, custom job filter components, and mobile-first career application portal interfaces.",
+      "Built with HTML5, CSS, and JavaScript, including animations. Prompts were generated and refined using the Claude AI tool to develop responsive layouts and interactive components.",
     type: "Aviation & Career Portal",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "Responsive UI"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "Animations", "Claude AI"],
   },
   {
     id: 2,
@@ -115,9 +135,9 @@ const projects = [
     url: "https://proimportltd.com/",
     image: "/images/proimportltd.jpg",
     description:
-      "Developed structured corporate logistics portal pages, service breakdown grids, and responsive inquiry contact forms.",
+      "Built with HTML5, CSS, and JavaScript, including animations. Prompts were generated and refined using the Claude AI tool to develop structured corporate logistics layouts and inquiry forms.",
     type: "Global Trade & Logistics",
-    technologies: ["HTML5", "CSS3", "Bootstrap 5", "JavaScript", "Corporate UI"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "Animations", "Claude AI"],
   },
   {
     id: 13,
@@ -135,9 +155,9 @@ const projects = [
     url: "https://resource4uhub.com/",
     image: "/images/resource4uhub.jpg",
     description:
-      "Built responsive article card grids, categorization filters, and mobile drawer menus for high content readability.",
+      "Built with HTML5, CSS, and JavaScript, including animations. Prompts were generated and refined using the Claude AI tool to develop responsive article card grids and categorization filters.",
     type: "Digital Resource & Info Hub",
-    technologies: ["HTML5", "CSS Grid", "Bootstrap", "JavaScript", "Responsive UI"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "Animations", "Claude AI"],
   },
   /* {
     id: 15,

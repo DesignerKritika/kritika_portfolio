@@ -3,6 +3,7 @@ import { Keyboard, Mousewheel } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import projects from "../data/projects.js";
+import { IconArrowUpRight } from "./Icons.jsx";
 
 function Projects() {
   const [swiper, setSwiper] = useState(null);
@@ -158,7 +159,10 @@ function Projects() {
                       alt={`${project.name} website preview`}
                       loading="lazy"
                     />
-                    <span className="project-image-badge">Open Live Site ↗</span>
+                    <span className="project-image-badge">
+                      <span>Open Live Site</span>
+                      <IconArrowUpRight size={11} style={{ marginLeft: "4px" }} />
+                    </span>
                   </a>
                 </div>
 
@@ -183,7 +187,8 @@ function Projects() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Live Site ↗
+                      <span>Live Site</span>
+                      <IconArrowUpRight size={13} style={{ marginLeft: "5px" }} />
                     </a>
                   </div>
                 </div>

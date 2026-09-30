@@ -1,3 +1,5 @@
+import { IconMail, IconPhone, IconLinkedIn, IconArrowUpRight, IconArrowRight, IconDownload } from "./Icons.jsx";
+
 function Hero() {
   return (
     <section className="hero section" id="home">
@@ -24,19 +26,29 @@ function Hero() {
           </div>
 
           <div className="hero-buttons">
-            <a className="button primary" href="#work">View My Work</a>
-            <a className="button" href="/resume/Kritika_Roy_Resume.pdf" download>Download Resume</a>
+            <a className="button primary" href="#work">
+              <span>View My Work</span>
+              <IconArrowRight size={15} style={{ marginLeft: "6px" }} />
+            </a>
+            <a className="button" href="/resume/Kritika_Roy_Resume.pdf" download>
+              <IconDownload size={15} style={{ marginRight: "6px" }} />
+              <span>Download Resume</span>
+            </a>
             <a className="text-link" href="#contact">Let's Work Together</a>
           </div>
 
           <div className="hero-contact-bar" aria-label="Direct contact links">
             <a href="mailto:kritika.roy372@gmail.com" className="hero-contact-item" title="Send email to Kritika">
-              <span className="hero-contact-icon">✉</span>
+              <span className="hero-contact-icon">
+                <IconMail size={14} />
+              </span>
               <span>kritika.roy372@gmail.com</span>
             </a>
             <span className="hero-contact-sep">/</span>
             <a href="tel:+919804926294" className="hero-contact-item" title="Call Kritika">
-              <span className="hero-contact-icon">✆</span>
+              <span className="hero-contact-icon">
+                <IconPhone size={14} />
+              </span>
               <span>+91 9804926294</span>
             </a>
             <span className="hero-contact-sep">/</span>
@@ -47,8 +59,11 @@ function Hero() {
               className="hero-contact-item"
               title="View LinkedIn Profile"
             >
-              <span className="hero-contact-icon">in</span>
-              <span>LinkedIn Profile ↗</span>
+              <span className="hero-contact-icon">
+                <IconLinkedIn size={14} />
+              </span>
+              <span>LinkedIn Profile</span>
+              <IconArrowUpRight size={12} style={{ marginLeft: "2px", opacity: 0.8 }} />
             </a>
           </div>
         </div>

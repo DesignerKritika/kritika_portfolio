@@ -1,3 +1,5 @@
+import { IconArrowRight } from "./Icons.jsx";
+
 function Services() {
   const services = [
     {
@@ -35,7 +37,10 @@ function Services() {
         <p className="section-label">Immediate Joiner + Freelance Availability</p>
         <h2>Have a website project in mind?</h2>
         <p>Let's build something clean, responsive and user-friendly.</p>
-        <a className="button primary" href="#contact">Start a Project -&gt;</a>
+        <a className="button primary" href="#contact">
+          <span>Start a Project</span>
+          <IconArrowRight size={15} style={{ marginLeft: "6px" }} />
+        </a>
         <div className="cta-tags">
           <span>Immediate Joiner</span>
           <span>Freelance Projects</span>
