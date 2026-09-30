@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { IconSun, IconMoon } from "./Icons.jsx";
 
 function Navbar({ darkMode, setDarkMode }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -101,7 +102,7 @@ function Navbar({ darkMode, setDarkMode }) {
             aria-label="Toggle dark and light mode"
             onClick={() => setDarkMode(!darkMode)}
           >
-            {darkMode ? "☼" : "☾"}
+            {darkMode ? <IconSun size={18} /> : <IconMoon size={18} />}
           </button>
         </div>
       </nav>

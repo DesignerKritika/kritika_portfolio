@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { IconArrowUpRight, IconDownload, IconClose } from "./Icons.jsx";
 
 function ResumeModal({ isOpen, onClose }) {
   useEffect(() => {
@@ -51,7 +52,7 @@ function ResumeModal({ isOpen, onClose }) {
               title="Open resume in a new tab"
             >
               <span>Open in New Tab</span>
-              <span aria-hidden="true">↗</span>
+              <IconArrowUpRight size={13} />
             </a>
             <a
               href="/resume/Kritika_Roy_Resume.pdf"
@@ -60,7 +61,7 @@ function ResumeModal({ isOpen, onClose }) {
               title="Download resume PDF"
             >
               <span>Download PDF</span>
-              <span aria-hidden="true">↓</span>
+              <IconDownload size={13} />
             </a>
             <button
               type="button"
@@ -69,7 +70,7 @@ function ResumeModal({ isOpen, onClose }) {
               aria-label="Close resume viewer"
               title="Close (Esc)"
             >
-              ✕
+              <IconClose size={18} />
             </button>
           </div>
         </header>

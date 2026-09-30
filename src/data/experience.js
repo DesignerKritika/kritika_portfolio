@@ -2,7 +2,7 @@ const experience = [
   {
     company: "WebArt Technology Pvt. Ltd.",
     role: "UI Developer / Frontend Developer",
-    dates: "Dates to be confirmed from final CV",
+    dates: "13 Nov 2023 – 18 Sep 2026",
     description:
       "Developed responsive websites, converted Figma and Photoshop designs into HTML/CSS, built reusable UI components, improved responsive behavior and supported cross-browser compatibility.",
     responsibilities: [
