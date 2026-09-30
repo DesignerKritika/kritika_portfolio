@@ -217,6 +217,7 @@ img {
     box-shadow 180ms ease;
 }
 
+.nav-links a .nav-link-num,
 .nav-links a span {
   color: var(--text);
   font-weight: 700;
@@ -234,6 +235,7 @@ img {
   transform: translateY(-1px);
 }
 
+.nav-links a:hover .nav-link-num,
 .nav-links a:hover span {
   opacity: 1;
 }
@@ -248,9 +250,14 @@ img {
   transform: translateY(-1px);
 }
 
+.nav-links a.active .nav-link-num,
 .nav-links a.active span {
   color: var(--bg);
   opacity: 0.85;
+}
+
+.nav-link-arrow {
+  display: none;
 }
 
 .nav-links a.active:hover {
@@ -284,11 +291,15 @@ img {
   background: transparent;
   color: var(--text);
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   transition:
     background-color 180ms ease,
     border-color 180ms ease,
     color 180ms ease,
-    transform 180ms ease;
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .theme-toggle:hover,
@@ -302,21 +313,40 @@ img {
 .theme-toggle {
   width: 42px;
   height: 42px;
-  font-size: 1.15rem;
+  padding: 0;
+}
+
+.theme-toggle-label {
+  display: none;
+}
+
+.theme-toggle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-toggle {
   display: none;
   width: 44px;
   height: 44px;
-  padding: 0 11px;
+  padding: 0;
 }
 
-.menu-toggle span {
+.menu-toggle-bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 20px;
+}
+
+.menu-toggle-bars span {
   display: block;
   height: 2px;
-  margin: 6px 0;
-  background: var(--text);
+  width: 100%;
+  background: currentColor;
+  transition: background-color 180ms ease;
 }
 
 .section {
@@ -1385,45 +1415,182 @@ p {
     min-height: 60px;
   }
 
+  .nav-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 95;
+    animation: fadeIn 180ms ease forwards;
+  }
+
   .menu-toggle {
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 105;
+  }
+
+  .menu-toggle.is-open {
+    border-color: var(--heading);
+    background: var(--heading);
+    color: #ffffff;
+    box-shadow: 2px 2px 0 var(--border);
   }
 
   .nav-actions {
     position: absolute;
     left: 16px;
     right: 16px;
-    top: calc(100% + 1px);
+    top: calc(100% + 10px);
     display: none;
     border: 1px solid var(--border);
-    padding: 14px;
-    background: var(--bg);
+    padding: 16px;
+    background: var(--surface);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12), 0 4px 12px rgba(15, 23, 42, 0.06);
+    z-index: 100;
+    transform-origin: top center;
+  }
+
+  .dark .nav-actions {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 4px 16px rgba(0, 0, 0, 0.4);
   }
 
   .nav-actions.open {
     display: grid;
-    gap: 16px;
+    gap: 14px;
+    animation: slideDownMenu 200ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
 
   .nav-links {
     display: grid;
-    gap: 8px;
+    gap: 6px;
     align-items: stretch;
+  }
+
+  .nav-links li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   .nav-links a {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 11px 15px;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 12px 16px;
+    background: color-mix(in srgb, var(--bg) 65%, var(--surface));
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition:
+      background-color 150ms ease,
+      border-color 150ms ease,
+      color 150ms ease,
+      transform 150ms ease;
+  }
+
+  .nav-links a .nav-link-num {
+    color: var(--subheading);
+    font-weight: 800;
+    font-size: 0.8rem;
+    min-width: 24px;
+    letter-spacing: 0.05em;
+  }
+
+  .nav-links a .nav-link-text {
+    flex-grow: 1;
+    text-align: left;
+    color: inherit;
+  }
+
+  .nav-links a .nav-link-arrow {
+    display: inline-block;
+    color: var(--muted);
+    transition: transform 150ms ease, color 150ms ease;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:active {
+    background: color-mix(in srgb, var(--text) 8%, var(--surface));
+    border-color: var(--heading);
+    color: var(--heading);
+    transform: translateX(2px);
+  }
+
+  .nav-links a:hover .nav-link-arrow {
+    color: var(--heading);
+    transform: translateX(3px);
   }
 
   .nav-links a.active {
-    box-shadow: 3px 3px 0 var(--border);
+    background: var(--heading);
+    color: #ffffff;
+    border-color: var(--heading);
+    box-shadow: 2px 2px 0 var(--border);
+    font-weight: 700;
+  }
+
+  .nav-links a.active .nav-link-num {
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  .nav-links a.active .nav-link-text {
+    color: #ffffff;
+  }
+
+  .nav-links a.active .nav-link-arrow {
+    color: #ffffff;
   }
 
   .theme-toggle {
     width: 100%;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 16px;
+    background: color-mix(in srgb, var(--bg) 65%, var(--surface));
+    border: 1px solid var(--border);
+    color: var(--heading);
+    font-weight: 700;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition:
+      background-color 150ms ease,
+      border-color 150ms ease,
+      color 150ms ease;
+  }
+
+  .theme-toggle .theme-toggle-label {
+    display: inline-block;
+    color: inherit;
+    letter-spacing: 0.02em;
+  }
+
+  .theme-toggle .theme-toggle-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+  }
+
+  .theme-toggle:hover,
+  .theme-toggle:active {
+    background: var(--heading);
+    border-color: var(--heading);
+    color: #ffffff;
+    transform: none;
+  }
+
+  .theme-toggle:hover .theme-toggle-label,
+  .theme-toggle:hover .theme-toggle-icon {
+    color: #ffffff;
   }
 
   .section {
@@ -1746,5 +1913,25 @@ p {
 
   .resume-modal-btn {
     padding: 8px 10px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDownMenu {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
