@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { IconSun, IconMoon } from "./Icons.jsx";
+import { IconSun, IconMoon, IconClose, IconArrowRight } from "./Icons.jsx";
 
 function Navbar({ darkMode, setDarkMode }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -49,6 +49,18 @@ function Navbar({ darkMode, setDarkMode }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuOpen]);
+
   function handleLinkClick(id) {
     setActiveSection(id);
     setMenuOpen(false);
@@ -67,15 +79,29 @@ function Navbar({ darkMode, setDarkMode }) {
         </a>
 
         <button
-          className="menu-toggle"
+          className={`menu-toggle ${menuOpen ? "is-open" : ""}`}
           type="button"
-          aria-label="Toggle navigation menu"
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <span></span>
-          <span></span>
+          {menuOpen ? (
+            <IconClose size={20} />
+          ) : (
+            <span className="menu-toggle-bars" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </span>
+          )}
         </button>
+
+        {menuOpen && (
+          <div
+            className="nav-backdrop"
+            onClick={closeMenu}
+            aria-hidden="true"
+          />
+        )}
 
         <div className={menuOpen ? "nav-actions open" : "nav-actions"}>
           <ul className="nav-links">
@@ -89,7 +115,9 @@ function Navbar({ darkMode, setDarkMode }) {
                     onClick={() => handleLinkClick(link.id)}
                     aria-current={isActive ? "page" : undefined}
                   >
-                    <span>{link.number}</span> {link.label}
+                    <span className="nav-link-num">{link.number}</span>
+                    <span className="nav-link-text">{link.label}</span>
+                    <IconArrowRight size={14} className="nav-link-arrow" />
                   </a>
                 </li>
               );
@@ -102,7 +130,12 @@ function Navbar({ darkMode, setDarkMode }) {
             aria-label="Toggle dark and light mode"
             onClick={() => setDarkMode(!darkMode)}
           >
-            {darkMode ? <IconSun size={18} /> : <IconMoon size={18} />}
+            <span className="theme-toggle-icon">
+              {darkMode ? <IconSun size={18} /> : <IconMoon size={18} />}
+            </span>
+            <span className="theme-toggle-label">
+              {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+            </span>
           </button>
         </div>
       </nav>
