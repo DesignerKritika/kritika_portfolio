@@ -77,9 +77,34 @@ button {
   font: inherit;
 }
 
+html,
+body,
+.app {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+input,
+textarea {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
 img {
   display: block;
   max-width: 100%;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 :focus-visible {
@@ -88,7 +113,12 @@ img {
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--focus) 28%, transparent);
+  background: transparent;
+  color: inherit;
+}
+
+::-moz-selection {
+  background: transparent;
   color: inherit;
 }
 
