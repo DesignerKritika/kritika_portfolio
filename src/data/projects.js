@@ -14,20 +14,24 @@ const projects = [
     name: "Balloon Antics",
     url: "https://balloonantics.com.au/",
     image: "/images/balloonantics.jpg",
+    isAiPowered: true,
+    aiBadge: "Claude Code & AI Dev",
     description:
-      "Built with HTML5, CSS, and JavaScript, including animations. Prompts were generated and refined using the Claude AI tool to craft playful party magician layouts and interactive booking flows.",
+      "Crafted playful party entertainer web layouts with custom CSS animations and responsive booking forms. Scaffolding, layout generation, and interactive components were accelerated and debugged using Claude Code.",
     type: "Kids Entertainment & Events",
-    technologies: ["HTML5", "Tailwind CSS", "JavaScript", "Animations", "Claude AI"],
+    technologies: ["HTML5", "Tailwind CSS", "JavaScript", "Claude Code", "AI Website Generation"],
   },
   {
     id: 1,
     name: "AviatorJob",
     url: "https://aviatorjob.com",
     image: "/images/aviatorjob.jpg",
+    isAiPowered: true,
+    aiBadge: "Claude Code & Codex",
     description:
-      "Built with HTML5, CSS, and JavaScript, including animations. Prompts were generated and refined using the Claude AI tool to develop responsive layouts and interactive components.",
+      "Developed high-traffic aviation career portal interfaces and responsive search filters. Utilized Claude Code and OpenAI Codex for rapid component generation, prompt-driven code authoring, and cross-browser debugging.",
     type: "Aviation & Career Portal",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Animations", "Claude AI"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "Claude Code", "OpenAI Codex", "AI Debugging"],
   },
   {
     id: 2,
@@ -134,10 +138,12 @@ const projects = [
     name: "Pro Import Ltd",
     url: "https://proimportltd.com/",
     image: "/images/proimportltd.jpg",
+    isAiPowered: true,
+    aiBadge: "Claude Code",
     description:
-      "Built with HTML5, CSS, and JavaScript, including animations. Prompts were generated and refined using the Claude AI tool to develop structured corporate logistics layouts and inquiry forms.",
+      "Engineered international logistics and trade website with fluid inquiry forms and quotation components. Leveraged Claude Code for automated code authoring, responsive flexbox layout generation, and CSS debugging.",
     type: "Global Trade & Logistics",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Animations", "Claude AI"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "Claude Code", "AI Debugging"],
   },
   {
     id: 13,
@@ -154,10 +160,12 @@ const projects = [
     name: "Resource 4 U Hub",
     url: "https://resource4uhub.com/",
     image: "/images/resource4uhub.jpg",
+    isAiPowered: true,
+    aiBadge: "Claude Code & Codex",
     description:
-      "Built with HTML5, CSS, and JavaScript, including animations. Prompts were generated and refined using the Claude AI tool to develop responsive article card grids and categorization filters.",
+      "Built modern digital resource directory with dynamic category filters and responsive article cards. Developed and debugged using Claude Code and OpenAI Codex for rapid HTML/CSS generation and responsive bug fixes.",
     type: "Digital Resource & Info Hub",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Animations", "Claude AI"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "Claude Code", "OpenAI Codex"],
   },
   /* {
     id: 15,

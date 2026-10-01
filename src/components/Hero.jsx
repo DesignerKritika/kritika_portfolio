@@ -1,4 +1,18 @@
-import { IconMail, IconPhone, IconLinkedIn, IconArrowUpRight, IconArrowRight, IconDownload } from "./Icons.jsx";
+import {
+  IconMail,
+  IconPhone,
+  IconLinkedIn,
+  IconArrowUpRight,
+  IconArrowRight,
+  IconDownload,
+  IconSparkle,
+  IconTerminal,
+  IconZap,
+  IconBriefcase,
+  IconGlobe,
+  IconLaptop,
+  IconBuilding
+} from "./Icons.jsx";
 
 function Hero() {
   return (
@@ -6,23 +20,57 @@ function Hero() {
       <div className="section-label">01 - Home</div>
       <div className="hero-grid">
         <div className="hero-copy">
-          <p className="availability-dot">Immediate Joiner & Available for Freelance Work</p>
+          <p className="availability-dot">Immediate Joiner • AI-Augmented UI Engineer • Open to Freelance</p>
           <h1>Kritika Roy</h1>
           <div className="hero-roles">
-            <span>Senior UI Developer</span>
-            {/* <span>UI Developer</span>
-            <span>Frontend Developer</span> */}
+            <span className="hero-role-main">Senior UI Developer</span>
+            <span className="role-ai-badge">
+              <IconSparkle size={13} />
+              <span>Claude Code & Codex Specialist</span>
+            </span>
           </div>
           <p className="hero-intro">
-            I create clean, responsive and user-focused digital experiences using modern frontend technologies.
+            I create clean, responsive and user-focused digital experiences — supercharged with <strong>Claude Code</strong> and <strong>OpenAI Codex</strong> for rapid website generation, terminal-based workflows, and precision debugging.
           </p>
 
           <div className="availability-pills" aria-label="Availability and work preference">
-            <span>Immediate Joiner</span>
-            <span>Freelance</span>
-            <span>Remote</span>
-            <span>Hybrid</span>
-            <span>Work from Office</span>
+            <span className="availability-pill pill-status" title="Immediate Joiner — Available immediately">
+              <span className="status-indicator" aria-hidden="true">
+                <span className="status-ping"></span>
+                <span className="status-core"></span>
+              </span>
+              <span className="pill-text">Immediate Joiner</span>
+            </span>
+
+            <span className="availability-pill pill-ai pill-ai-accent" title="AI Engineering: Claude Code & OpenAI Codex">
+              <IconSparkle size={13} className="pill-icon pill-icon-sparkle" />
+              <span className="pill-text">Claude Code & Codex</span>
+            </span>
+
+            <span className="availability-pill pill-ai pill-ai-accent" title="AI Website Generation & Deep Debugging">
+              <IconZap size={13} className="pill-icon pill-icon-zap" />
+              <span className="pill-text">AI Web Generation & Debugging</span>
+            </span>
+
+            <span className="availability-pill pill-mode" title="Open to Freelance & Contract Projects">
+              <IconBriefcase size={13} className="pill-icon" />
+              <span className="pill-text">Freelance</span>
+            </span>
+
+            <span className="availability-pill pill-mode" title="Available for Remote Roles">
+              <IconGlobe size={13} className="pill-icon" />
+              <span className="pill-text">Remote</span>
+            </span>
+
+            <span className="availability-pill pill-mode" title="Available for Hybrid Roles">
+              <IconLaptop size={13} className="pill-icon" />
+              <span className="pill-text">Hybrid</span>
+            </span>
+
+            <span className="availability-pill pill-mode" title="Available for Work from Office">
+              <IconBuilding size={13} className="pill-icon" />
+              <span className="pill-text">Work from Office</span>
+            </span>
           </div>
 
           <div className="hero-buttons">
@@ -73,6 +121,14 @@ function Hero() {
             <strong>7+</strong>
             <span>Years Frontend & UI Development</span>
           </div>
+          <div className="highlight-box hero-ai-card">
+            <div className="hero-ai-badge">
+              <IconSparkle size={12} />
+              <span>AI-Driven Workflow</span>
+            </div>
+            <strong>Claude Code & Codex</strong>
+            <span>Website Generation • CLI Workflows • Deep Debugging</span>
+          </div>
           <div className="highlight-box">
             <strong>Immediate Joiner</strong>
             <span>Ready for full-time roles</span>
@@ -92,3 +148,4 @@ function Hero() {
 }
 
 export default Hero;
+
