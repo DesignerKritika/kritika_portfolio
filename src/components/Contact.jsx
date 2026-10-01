@@ -3,7 +3,7 @@ import { IconMail, IconPhone, IconLinkedIn, IconGitHub, IconArrowUpRight } from 
 function Contact() {
   return (
     <section className="section contact" id="contact">
-      <div className="section-label">08 - Contact</div>
+      <div className="section-label">09 — Contact</div>
       <div className="contact-grid">
         <div>
           <h2>Let's work together.</h2>

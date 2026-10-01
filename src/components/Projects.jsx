@@ -3,7 +3,8 @@ import { Keyboard, Mousewheel } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import projects from "../data/projects.js";
-import { IconArrowUpRight } from "./Icons.jsx";
+import { IconArrowUpRight, IconSparkle } from "./Icons.jsx";
+
 
 function Projects() {
   const [swiper, setSwiper] = useState(null);
@@ -17,10 +18,10 @@ function Projects() {
   };
 
   return (
-    <section className="section projects" id="work">
+    <section className="section projects" id="work" >
       <div className="projects-header">
         <div className="projects-heading-wrap">
-          <div className="section-label">04 - Selected Work</div>
+          <div className="section-label">05 — Selected Work</div>
           <div className="section-heading">
             <h2>Responsive websites built with structure, clarity and care.</h2>
           </div>
@@ -117,78 +118,119 @@ function Projects() {
           return (
             <SwiperSlide key={project.id}>
               <article className="project-card">
-                <div className="project-mockup">
-                  <div className="mockup-header">
-                    <div className="mockup-dots" aria-hidden="true">
-                      <span className="dot dot-red"></span>
-                      <span className="dot dot-yellow"></span>
-                      <span className="dot dot-green"></span>
-                    </div>
-                    {domain && (
-                      <span className="mockup-domain">
-                        <svg
-                          className="domain-icon"
-                          viewBox="0 0 24 24"
-                          width="12"
-                          height="12"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          aria-hidden="true"
-                        >
-                          <circle cx="12" cy="12" r="10" />
-                          <line x1="2" y1="12" x2="22" y2="12" />
-                          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                        </svg>
-                        {domain}
-                      </span>
-                    )}
-                  </div>
+                {/* Visual Showcase / Image Container */}
+                <div className="project-card-media">
                   <a
-                    className="project-image-link"
+                    className="project-media-link"
                     href={project.url}
                     target="_blank"
                     rel="noreferrer"
-                    title={`Visit ${project.name} live`}
+                    title={`Open ${project.name} live website`}
                   >
-                    <img
-                      className="project-img"
-                      src={project.image}
-                      alt={`${project.name} website preview`}
-                      loading="lazy"
-                    />
-                    <span className="project-image-badge">
-                      <span>Open Live Site</span>
-                      <IconArrowUpRight size={11} style={{ marginLeft: "4px" }} />
-                    </span>
+                    <div className="project-image-container">
+                      <img
+                        className="project-card-img"
+                        src={project.image}
+                        alt={`${project.name} website preview`}
+                        loading="lazy"
+                      />
+                      <div className="project-image-gradient" aria-hidden="true" />
+                    </div>
+
+                    {/* Top Floating Badges */}
+                    <div className="project-floating-bar" aria-hidden="true">
+                      {domain ? (
+                        <div className="project-domain-pill">
+                          <span className="domain-live-dot" />
+                          <span className="domain-text">{domain}</span>
+                        </div>
+                      ) : (
+                        <div className="project-domain-pill">
+                          <span className="domain-live-dot" />
+                          <span className="domain-text">Live Project</span>
+                        </div>
+                      )}
+                      <span className="project-index-pill">
+                        #{String(index + 1).padStart(2, "0")}
+                      </span>
+                    </div>
+
+                    {/* Hover Floating Action */}
+                    <div className="project-hover-pill">
+                      <span>Visit Website</span>
+                      <IconArrowUpRight size={13} />
+                    </div>
                   </a>
                 </div>
 
-                <div className="project-content">
-                  <div className="project-meta">
-                    <span className="project-number">
-                      #{String(index + 1).padStart(2, "0")}
-                    </span>
-                    <span className="project-type-badge">{project.type}</span>
+                {/* Card Content Information */}
+                <div className="project-card-content">
+                  {/* Category & AI Tag Row */}
+                  <div className="project-card-meta">
+                    <span className="project-cat-badge">{project.type}</span>
+                    {project.isAiPowered && (
+                      <span className="project-ai-badge">
+                        <IconSparkle size={11} />
+                        <span>{project.aiBadge || "AI Accelerated"}</span>
+                      </span>
+                    )}
                   </div>
-                  <h3>{project.name}</h3>
-                  <p>{project.description}</p>
-                  <ul className="tag-list">
-                    {project.technologies.map((technology) => (
-                      <li key={technology}>{technology}</li>
-                    ))}
-                  </ul>
-                  <div className="project-actions">
+
+                  {/* Title with Interactive External Arrow */}
+                  <h3 className="project-card-heading">
                     <a
-                      className="button primary project-link-btn"
                       href={project.url}
                       target="_blank"
                       rel="noreferrer"
+                      className="project-heading-link"
                     >
-                      <span>Live Site</span>
-                      <IconArrowUpRight size={13} style={{ marginLeft: "5px" }} />
+                      <span>{project.name}</span>
+                      <IconArrowUpRight size={16} className="heading-arrow" />
+                    </a>
+                  </h3>
+
+                  {/* Description */}
+                  <p className="project-card-description">{project.description}</p>
+
+                  {/* Tech Stack Pills */}
+                  <div className="project-card-tags">
+                    <ul className="project-pills-list">
+                      {project.technologies.map((technology) => {
+                        const isAi =
+                          technology.includes("Claude") ||
+                          technology.includes("Codex") ||
+                          technology.includes("AI");
+                        return (
+                          <li
+                            key={technology}
+                            className={`project-pill ${isAi ? "pill-is-ai" : ""}`}
+                          >
+                            {isAi && (
+                              <IconSparkle
+                                size={10}
+                                style={{ marginRight: "4px", verticalAlign: "middle" }}
+                              />
+                            )}
+                            <span>{technology}</span>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+
+                  {/* Modern Action Footer */}
+                  <div className="project-card-footer">
+                    <a
+                      className="project-explore-btn"
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Visit ${project.name} live website`}
+                    >
+                      <span className="btn-text">Explore Live Site</span>
+                      <span className="btn-arrow-circle" aria-hidden="true">
+                        <IconArrowUpRight size={13} />
+                      </span>
                     </a>
                   </div>
                 </div>

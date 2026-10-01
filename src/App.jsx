@@ -3,6 +3,7 @@ import Lenis from "lenis";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import About from "./components/About.jsx";
+import Workflow from "./components/Workflow.jsx";
 import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
 import Experience from "./components/Experience.jsx";
@@ -71,20 +72,28 @@ function App() {
         ".hero-copy > *",
         ".hero-panel > div",
         ".split-layout > *",
+        ".about-main-grid > *",
+        ".about-pillar-card",
+        ".about-bento-stat",
+        ".workflow-intro-grid > *",
+        ".workflow-stepper",
+        ".workflow-stage-detail",
+        ".workflow-adv-card",
         ".stat",
         ".skill-row",
         ".project-carousel",
         ".timeline-item",
         ".service-card",
-        ".freelance-cta",
-        ".resume-box",
+        ".services-project-invite",
+        ".avail-resume-header > *",
+        ".avail-resume-grid > *",
         ".contact-grid > *"
       ].join(", ")
     );
 
     revealItems.forEach((item, index) => {
       item.classList.add("reveal-item");
-      item.style.setProperty("--reveal-delay", `${Math.min(index % 6, 5) * 70}ms`);
+      item.style.setProperty("--reveal-delay", `${Math.min(index % 6, 5) * 60}ms`);
     });
 
     const observer = new IntersectionObserver(
@@ -96,7 +105,7 @@ function App() {
           }
         });
       },
-      { rootMargin: "0px 0px -12% 0px", threshold: 0.12 }
+      { rootMargin: "0px 0px -10% 0px", threshold: 0.08 }
     );
 
     revealItems.forEach((item) => observer.observe(item));
@@ -110,6 +119,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Workflow />
         <Skills />
         <Projects />
         <Experience />
