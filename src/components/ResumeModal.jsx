@@ -40,7 +40,7 @@ function ResumeModal({ isOpen, onClose }) {
           <div className="resume-modal-info">
             <h3 className="resume-modal-title">Kritika Roy — Resume</h3>
             <span className="resume-modal-badge">Senior UI Developer</span>
-            <span className="resume-modal-pages">4 Pages • PDF</span>
+            <span className="resume-modal-pages">1 Page • ATS PDF</span>
           </div>
 
           <div className="resume-modal-actions">
