@@ -21,7 +21,7 @@ function Hero() {
       <div className="hero-grid">
         <div className="hero-copy">
           <p className="availability-dot">Immediate Joiner • AI-Augmented UI Engineer • Open to Freelance</p>
-          <h1>Kritika</h1>
+          <h1>Kritika Roy</h1>
           <div className="hero-roles">
             <span className="hero-role-main">Senior UI Developer</span>
             <span className="role-ai-badge">
