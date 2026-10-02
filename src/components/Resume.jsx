@@ -13,7 +13,7 @@ import {
   IconFileText,
   IconMail,
   IconPhone,
-  IconArrowUpRight
+  IconArrowUpRight,
 } from "./Icons.jsx";
 
 function Resume() {
@@ -31,23 +31,23 @@ function Resume() {
     {
       title: "Notice Period",
       value: "0 Days — Immediate",
-      desc: "Ready to join instantly with no transition lag"
+      desc: "Ready to join instantly with no transition lag",
     },
     {
       title: "Primary Roles",
       value: "Senior UI Dev / Frontend",
-      desc: "7+ years mastering pixel-perfect code & systems"
+      desc: "7+ years mastering pixel-perfect code & systems",
     },
     {
       title: "AI Workflows",
       value: "Claude Code & Codex",
-      desc: "Accelerated scaffolding & deep bug diagnostics"
+      desc: "Accelerated scaffolding & deep bug diagnostics",
     },
     {
       title: "Work Locations",
       value: "Remote / Hybrid / Office",
-      desc: "Kolkata on-site or worldwide remote alignment"
-    }
+      desc: "Kolkata on-site or worldwide remote alignment",
+    },
   ];
 
   const resumeHighlights = [
@@ -55,8 +55,8 @@ function Resume() {
     "50+ Completed Responsive Web Projects",
     "Specialist in Claude Code CLI & OpenAI Codex",
     "Figma & Photoshop to Pixel-Perfect HTML5/CSS3",
-    "WCAG 2.1 AA Accessibility & Clean Code Architecture",
-    "Zero Layout Shift & Cross-Browser Consistency"
+    "Web Accessibility & Clean Code Architecture",
+    "Zero Layout Shift & Cross-Browser Consistency",
   ];
 
   return (
@@ -71,7 +71,8 @@ function Resume() {
               <span className="radar-core"></span>
             </span>
             <span className="avail-status-text">
-              <strong>IMMEDIATE JOINER</strong> • Available Immediately for Full-Time Roles & Freelance Contracts
+              <strong>IMMEDIATE JOINER</strong> • Available Immediately for
+              Full-Time Roles & Freelance Contracts
             </span>
           </div>
 
@@ -79,8 +80,10 @@ function Resume() {
             Ready to bring velocity, craft, and precision to your team.
           </h2>
           <p className="avail-resume-desc">
-            Whether you need a dedicated Senior UI Developer to join your engineering team immediately,
-            or an expert frontend engineer to build, debug, and modernize your digital product — I am ready to deliver from day one.
+            Whether you need a dedicated Senior UI Developer to join your
+            engineering team immediately, or an expert frontend engineer to
+            build, debug, and modernize your digital product — I am ready to
+            deliver from day one.
           </p>
         </div>
 
@@ -96,9 +99,12 @@ function Resume() {
               <span className="notice-chip">Notice: 0 Days</span>
             </div>
 
-            <h3 className="hub-card-title">Immediate Joiner & Open for Freelance</h3>
+            <h3 className="hub-card-title">
+              Immediate Joiner & Open for Freelance
+            </h3>
             <p className="hub-card-intro">
-              Available immediately for high-impact roles, contract sprints, and design-to-code conversions.
+              Available immediately for high-impact roles, contract sprints, and
+              design-to-code conversions.
             </p>
 
             {/* Quick Stat Pill Grid */}
@@ -142,7 +148,10 @@ function Resume() {
                 <IconArrowRight size={15} style={{ marginLeft: "8px" }} />
               </a>
               <div className="hub-direct-links">
-                <a href="mailto:kritika.roy372@gmail.com" className="hub-contact-link">
+                <a
+                  href="mailto:kritika.roy372@gmail.com"
+                  className="hub-contact-link"
+                >
                   <IconMail size={14} />
                   <span>kritika.roy372@gmail.com</span>
                 </a>
@@ -163,12 +172,15 @@ function Resume() {
                 <IconFileText size={15} />
                 <span>Executive Credentials</span>
               </div>
-              <span className="resume-meta-chip">PDF • 4 Pages • 2026</span>
+              <span className="resume-meta-chip">ATS PDF • 1 Page • 2026</span>
             </div>
 
-            <h3 className="resume-card-title">Kritika Roy — Senior UI Developer</h3>
+            <h3 className="resume-card-title">
+              Kritika Roy — Senior UI Developer
+            </h3>
             <p className="resume-card-role">
-              7+ Years Frontend Discipline &bull; Claude Code CLI &bull; OpenAI Codex
+              Senior UI Developer &bull; Frontend Developer &bull; HTML
+              Developer
             </p>
 
             {/* Highlights Checklist */}
@@ -190,7 +202,10 @@ function Resume() {
               </div>
               <div className="preview-doc-info">
                 <strong>Kritika_Roy_Resume.pdf</strong>
-                <span>Official resume document ready for recruiter and hiring manager review</span>
+                <span>
+                  Official resume document ready for recruiter and hiring
+                  manager review
+                </span>
               </div>
             </div>
 
@@ -213,21 +228,19 @@ function Resume() {
                 download="Kritika_Roy_Resume.pdf"
               >
                 <IconDownload size={16} style={{ marginRight: "8px" }} />
-                <span>Download PDF (340 KB)</span>
+                <span>Download ATS PDF</span>
               </a>
             </div>
 
             <p className="resume-screen-hint">
-              Click <strong>View Full Resume</strong> to open the interactive in-browser viewer, or download the PDF for offline review.
+              Click <strong>View Full Resume</strong> to open the interactive
+              in-browser viewer, or download the PDF for offline review.
             </p>
           </div>
         </div>
       </section>
 
-      <ResumeModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
+      <ResumeModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 }
