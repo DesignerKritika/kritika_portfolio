@@ -36,7 +36,7 @@ function Resume() {
     {
       title: "Primary Roles",
       value: "Senior UI & Frontend Developer",
-      desc: "HTML5 • CSS3 • JavaScript • React Basics",
+      desc: "HTML5 • CSS3 • JavaScript • React.js",
     },
     {
       title: "Core Expertise",
@@ -52,7 +52,7 @@ function Resume() {
 
   const resumeHighlights = [
     "Senior UI Developer & Frontend Engineer with Proven Track Record",
-    "Semantic HTML5, Modern CSS3, JavaScript (ES6+) & Foundational React.js",
+    "Semantic HTML5, Modern CSS3, JavaScript (ES6+) & React.js",
     "50+ Delivered Responsive Web Projects Across International Clients",
     "Specialist in Claude Code CLI & OpenAI Codex Accelerated Engineering",
     "Figma & Photoshop to Pixel-Perfect, Zero-Layout-Shift Web Interfaces",
@@ -72,7 +72,7 @@ function Resume() {
             </span>
             <span className="avail-status-text">
               <strong>IMMEDIATE JOINER</strong> • Available Immediately for
-              Full-Time Roles & Freelance Contracts
+              Full-Time Senior Roles
             </span>
           </div>
 
@@ -89,7 +89,7 @@ function Resume() {
 
         {/* Dual Command Center Bento Grid */}
         <div className="avail-resume-grid">
-          {/* Card 1: Immediate Joiner & Freelance Availability Hub */}
+          {/* Card 1: Immediate Joiner & Availability Hub */}
           <div className="avail-hub-card">
             <div className="hub-top-bar">
               <div className="hub-badge">
@@ -100,10 +100,10 @@ function Resume() {
             </div>
 
             <h3 className="hub-card-title">
-              Immediate Joiner & Open for Freelance
+              Immediate Joiner & Open for Opportunities
             </h3>
             <p className="hub-card-intro">
-              Available immediately for high-impact roles, contract sprints, and
+              Available immediately for high-impact roles, engineering teams, and
               design-to-code conversions.
             </p>
 
@@ -136,7 +136,7 @@ function Resume() {
                 </span>
                 <span className="hub-pill hub-pill-featured">
                   <IconSparkle size={13} />
-                  <span>Freelance Projects</span>
+                  <span>Full-Time Role</span>
                 </span>
               </div>
             </div>

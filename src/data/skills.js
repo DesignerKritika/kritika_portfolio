@@ -82,7 +82,7 @@ const skills = [
       { name: "HTML5 (Semantic & SEO)", highlight: true },
       { name: "CSS3 & Modern Layouts", highlight: true },
       { name: "JavaScript (ES6+)", highlight: true },
-      { name: "React.js (Basics & Components)", highlight: true },
+      { name: "React.js", highlight: true },
       { name: "Tailwind CSS", highlight: true },
       { name: "Bootstrap 5", highlight: false },
       { name: "SASS / SCSS", highlight: false },

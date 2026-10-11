@@ -42,7 +42,7 @@ function About() {
     {
       icon: <IconLayers size={18} />,
       title: "Pixel-Perfect Conversion",
-      description: "1:1 translation from Figma and Photoshop mockups into clean, modular, semantic HTML5, modern CSS3, and foundational React components."
+      description: "1:1 translation from Figma and Photoshop mockups into clean, modular, semantic HTML5, modern CSS3, and React.js components."
     },
     {
       icon: <IconLaptop size={18} />,
@@ -80,7 +80,7 @@ function About() {
               I am a <strong>Senior UI Developer and Frontend Engineer</strong> based in Kolkata, India. Throughout my career, my core discipline has centered on turning creative design visions into production-ready web interfaces with uncompromised fidelity, clean semantic HTML5, and maintainable CSS architecture.
             </p>
             <p>
-              My sweet spot is at the intersection of design and code — transforming Figma and Photoshop files into responsive, accessible, cross-browser compliant applications that load fast and feel effortless. I also build foundational React components and modular UI interfaces with precision.
+              My sweet spot is at the intersection of design and code — transforming Figma and Photoshop files into responsive, accessible, cross-browser compliant applications that load fast and feel effortless. I also build clean React.js components and modular UI interfaces with precision.
             </p>
           </div>
 
@@ -89,7 +89,7 @@ function About() {
             <span className="about-spec-tag">Photoshop to Code</span>
             <span className="about-spec-tag">Pixel-Perfect UI</span>
             <span className="about-spec-tag">Responsive Systems</span>
-            <span className="about-spec-tag">React.js (Basics)</span>
+            <span className="about-spec-tag">React.js</span>
             <span className="about-spec-tag">Claude Code & Codex</span>
           </div>
         </div>

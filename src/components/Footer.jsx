@@ -23,7 +23,7 @@ function Footer() {
         </a>
       </div>
       <p>Senior HTML Developer &middot; UI Developer &middot; Frontend Developer</p>
-      <p>Immediate Joiner &middot; Freelance &middot; Remote / Hybrid / Work from Office</p>
+      <p>Immediate Joiner &middot; Remote / Hybrid / Work from Office</p>
       <a href="#home" className="footer-top-link">
         <span>Back to top</span>
         <IconArrowUp size={13} style={{ marginLeft: "4px" }} />

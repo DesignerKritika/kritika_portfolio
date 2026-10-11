@@ -7,7 +7,6 @@ import {
   IconDownload,
   IconSparkle,
   IconZap,
-  IconBriefcase,
   IconGlobe,
   IconLaptop,
   IconBuilding
@@ -19,7 +18,7 @@ function Hero() {
       <div className="section-label">01 - Home</div>
       <div className="hero-grid">
         <div className="hero-copy">
-          <p className="availability-dot">Immediate Joiner • AI-Augmented UI Engineer • Open to Freelance</p>
+          <p className="availability-dot">Immediate Joiner • AI-Augmented UI Engineer • Open to New Opportunities</p>
           <h1>Kritika Roy</h1>
           <div className="hero-roles">
             <span className="hero-role-main">Senior UI Developer</span>
@@ -29,7 +28,7 @@ function Hero() {
             </span>
           </div>
           <p className="hero-intro">
-            I craft clean, responsive and user-focused digital experiences — specializing in pixel-perfect Figma-to-code conversions, foundational React components, and modern CSS architecture, supercharged with <strong>Claude Code</strong> and <strong>OpenAI Codex</strong> for rapid website generation, terminal-based workflows, and precision debugging.
+            I craft clean, responsive and user-focused digital experiences — specializing in pixel-perfect Figma-to-code conversions, React.js components, and modern CSS architecture, supercharged with <strong>Claude Code</strong> and <strong>OpenAI Codex</strong> for rapid website generation, terminal-based workflows, and precision debugging.
           </p>
 
           <div className="availability-pills" aria-label="Availability and work preference">
@@ -51,10 +50,6 @@ function Hero() {
               <span className="pill-text">AI Web Generation & Debugging</span>
             </span>
 
-            <span className="availability-pill pill-mode" title="Open to Freelance & Contract Projects">
-              <IconBriefcase size={13} className="pill-icon" />
-              <span className="pill-text">Freelance</span>
-            </span>
 
             <span className="availability-pill pill-mode" title="Available for Remote Roles">
               <IconGlobe size={13} className="pill-icon" />
@@ -130,10 +125,10 @@ function Hero() {
           </div>
           <div className="highlight-box">
             <strong>Immediate Joiner</strong>
-            <span>Ready for full-time roles & freelance</span>
+            <span>Ready for full-time senior roles</span>
           </div>
           <div className="highlight-box">
-            <strong>Pixel-Perfect UI & React Basics</strong>
+            <strong>Pixel-Perfect UI & React.js</strong>
             <span>Figma to HTML • Responsive Systems • Clean Code</span>
           </div>
           <div>
