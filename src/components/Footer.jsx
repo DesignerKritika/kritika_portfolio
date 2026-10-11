@@ -3,7 +3,7 @@ import { IconArrowUp } from "./Icons.jsx";
 function Footer() {
   return (
     <footer className="footer">
-      <p>&copy; 2026 Kritika Roy</p>
+      <p>&copy; Kritika Roy</p>
       <div className="footer-links">
         <a href="mailto:kritika.roy372@gmail.com" title="Send email">
           Email: kritika.roy372@gmail.com
@@ -23,7 +23,7 @@ function Footer() {
         </a>
       </div>
       <p>Senior HTML Developer &middot; UI Developer &middot; Frontend Developer</p>
-      <p>Immediate Joiner &middot; Freelance &middot; Remote / Hybrid / Work from Office</p>
+      <p>Immediate Joiner &middot; Remote / Hybrid / Work from Office</p>
       <a href="#home" className="footer-top-link">
         <span>Back to top</span>
         <IconArrowUp size={13} style={{ marginLeft: "4px" }} />

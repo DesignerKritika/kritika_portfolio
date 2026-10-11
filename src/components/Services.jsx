@@ -1,4 +1,4 @@
-import { IconArrowRight, IconSparkle, IconFileText, IconCheck } from "./Icons.jsx";
+import { IconArrowRight, IconSparkle, IconFileText } from "./Icons.jsx";
 
 function Services() {
   const services = [
@@ -17,7 +17,7 @@ function Services() {
     {
       title: "Figma & Photoshop to HTML",
       subtitle: "Pixel-Perfect Conversion",
-      text: "Flawless 1:1 translation of Figma designs and Photoshop mockups into clean, accessible, semantic HTML5 and modern CSS3/SCSS.",
+      text: "Flawless 1:1 translation of Figma designs and Photoshop mockups into clean, accessible, semantic HTML5, modern CSS3/SCSS, and React.js components.",
       highlight: false
     },
     {
@@ -58,12 +58,12 @@ function Services() {
         <div className="invite-content">
           <div className="invite-badge">
             <IconSparkle size={13} />
-            <span>Collaboration & Contracting</span>
+            <span>Collaboration & Opportunities</span>
           </div>
           <h3>Have a website or debugging project in mind?</h3>
           <p>
             Whether you need rapid design-to-HTML conversion, layout shift fixes, or complete frontend development,
-            I am available for immediate start on freelance contracts and full-time senior roles.
+            I am available for immediate start on full-time senior roles and high-impact web projects.
           </p>
         </div>
         <div className="invite-actions">

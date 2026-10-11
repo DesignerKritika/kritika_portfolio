@@ -4,7 +4,7 @@
 
 This is a modern personal portfolio website for Kritika Roy.
 
-It presents Kritika as a Senior HTML Developer, UI Developer and Frontend Developer with 7+ years of frontend/UI development experience. The website is designed to help with job applications, freelance work and immediate joining opportunities.
+It presents Kritika as a Senior UI Developer and Frontend Developer specializing in pixel-perfect Figma-to-code conversions, foundational React components, modern CSS architecture, and AI-accelerated workflows with Claude Code & OpenAI Codex. The website highlights production applications, immediate availability, and senior UI engineering capabilities.
 
 The design is minimal, editorial, responsive and easy to edit.
 

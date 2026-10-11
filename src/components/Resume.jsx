@@ -35,13 +35,13 @@ function Resume() {
     },
     {
       title: "Primary Roles",
-      value: "Senior UI Dev / Frontend",
-      desc: "7+ years mastering pixel-perfect code & systems",
+      value: "Senior UI & Frontend Developer",
+      desc: "HTML5 • CSS3 • JavaScript • React.js",
     },
     {
-      title: "AI Workflows",
-      value: "Claude Code & Codex",
-      desc: "Accelerated scaffolding & deep bug diagnostics",
+      title: "Core Expertise",
+      value: "Pixel-Perfect UI & AI Workflows",
+      desc: "Figma to Code • Claude Code CLI • Zero Shift",
     },
     {
       title: "Work Locations",
@@ -51,12 +51,12 @@ function Resume() {
   ];
 
   const resumeHighlights = [
-    "7+ Years of Frontend & UI Engineering",
-    "50+ Completed Responsive Web Projects",
-    "Specialist in Claude Code CLI & OpenAI Codex",
-    "Figma & Photoshop to Pixel-Perfect HTML5/CSS3",
-    "Web Accessibility & Clean Code Architecture",
-    "Zero Layout Shift & Cross-Browser Consistency",
+    "Senior UI Developer & Frontend Engineer with Proven Track Record",
+    "Semantic HTML5, Modern CSS3, JavaScript (ES6+) & React.js",
+    "50+ Delivered Responsive Web Projects Across International Clients",
+    "Specialist in Claude Code CLI & OpenAI Codex Accelerated Engineering",
+    "Figma & Photoshop to Pixel-Perfect, Zero-Layout-Shift Web Interfaces",
+    "WCAG 2.1 AA Accessibility, Core Web Vitals & Cross-Browser Consistency",
   ];
 
   return (
@@ -72,7 +72,7 @@ function Resume() {
             </span>
             <span className="avail-status-text">
               <strong>IMMEDIATE JOINER</strong> • Available Immediately for
-              Full-Time Roles & Freelance Contracts
+              Full-Time Senior Roles
             </span>
           </div>
 
@@ -89,7 +89,7 @@ function Resume() {
 
         {/* Dual Command Center Bento Grid */}
         <div className="avail-resume-grid">
-          {/* Card 1: Immediate Joiner & Freelance Availability Hub */}
+          {/* Card 1: Immediate Joiner & Availability Hub */}
           <div className="avail-hub-card">
             <div className="hub-top-bar">
               <div className="hub-badge">
@@ -100,10 +100,10 @@ function Resume() {
             </div>
 
             <h3 className="hub-card-title">
-              Immediate Joiner & Open for Freelance
+              Immediate Joiner & Open for Opportunities
             </h3>
             <p className="hub-card-intro">
-              Available immediately for high-impact roles, contract sprints, and
+              Available immediately for high-impact roles, engineering teams, and
               design-to-code conversions.
             </p>
 
@@ -136,7 +136,7 @@ function Resume() {
                 </span>
                 <span className="hub-pill hub-pill-featured">
                   <IconSparkle size={13} />
-                  <span>Freelance Projects</span>
+                  <span>Full-Time Role</span>
                 </span>
               </div>
             </div>
@@ -172,7 +172,7 @@ function Resume() {
                 <IconFileText size={15} />
                 <span>Executive Credentials</span>
               </div>
-              <span className="resume-meta-chip">ATS PDF • 1 Page • 2026</span>
+              <span className="resume-meta-chip">ATS PDF • 1 Page • Verified</span>
             </div>
 
             <h3 className="resume-card-title">
@@ -221,7 +221,6 @@ function Resume() {
                 <IconEye size={16} style={{ marginRight: "8px" }} />
                 <span>View Full Resume</span>
               </a>
-
               <a
                 className="button resume-action-btn resume-download-btn"
                 href="/resume/Kritika_Roy_Resume.pdf"
@@ -240,6 +239,7 @@ function Resume() {
         </div>
       </section>
 
+      {/* Embedded Resume Modal Dialog */}
       <ResumeModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
