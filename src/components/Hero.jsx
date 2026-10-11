@@ -6,7 +6,6 @@ import {
   IconArrowRight,
   IconDownload,
   IconSparkle,
-  IconTerminal,
   IconZap,
   IconBriefcase,
   IconGlobe,
@@ -30,7 +29,7 @@ function Hero() {
             </span>
           </div>
           <p className="hero-intro">
-            I create clean, responsive and user-focused digital experiences — supercharged with <strong>Claude Code</strong> and <strong>OpenAI Codex</strong> for rapid website generation, terminal-based workflows, and precision debugging.
+            I craft clean, responsive and user-focused digital experiences — specializing in pixel-perfect Figma-to-code conversions, foundational React components, and modern CSS architecture, supercharged with <strong>Claude Code</strong> and <strong>OpenAI Codex</strong> for rapid website generation, terminal-based workflows, and precision debugging.
           </p>
 
           <div className="availability-pills" aria-label="Availability and work preference">
@@ -118,8 +117,8 @@ function Hero() {
 
         <aside className="hero-panel" aria-label="Availability and experience summary">
           <div>
-            <strong>7+</strong>
-            <span>Years Frontend & UI Development</span>
+            <strong>Senior</strong>
+            <span>Frontend & UI Specialist</span>
           </div>
           <div className="highlight-box hero-ai-card">
             <div className="hero-ai-badge">
@@ -131,11 +130,11 @@ function Hero() {
           </div>
           <div className="highlight-box">
             <strong>Immediate Joiner</strong>
-            <span>Ready for full-time roles</span>
+            <span>Ready for full-time roles & freelance</span>
           </div>
           <div className="highlight-box">
-            <strong>Freelance</strong>
-            <span>Available for project work</span>
+            <strong>Pixel-Perfect UI & React Basics</strong>
+            <span>Figma to HTML • Responsive Systems • Clean Code</span>
           </div>
           <div>
             <strong>Remote / Hybrid / Office</strong>
@@ -148,4 +147,3 @@ function Hero() {
 }
 
 export default Hero;
-

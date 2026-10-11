@@ -13,15 +13,15 @@ import {
 function About() {
   const stats = [
     {
-      value: "7+",
-      label: "Years Experience",
-      subtext: "Senior Frontend & UI Specialist",
+      value: "Senior",
+      label: "Engineering Level",
+      subtext: "Frontend & UI Specialist",
       highlight: false
     },
     {
       value: "50+",
       label: "Web Projects",
-      subtext: "SaaS, E-Commerce & Portals",
+      subtext: "Responsive Sites & Portals",
       highlight: false
     },
     {
@@ -42,12 +42,12 @@ function About() {
     {
       icon: <IconLayers size={18} />,
       title: "Pixel-Perfect Conversion",
-      description: "1:1 translation from Figma and Photoshop mockups into clean, modular, semantic HTML5 and modern CSS3."
+      description: "1:1 translation from Figma and Photoshop mockups into clean, modular, semantic HTML5, modern CSS3, and foundational React components."
     },
     {
       icon: <IconLaptop size={18} />,
       title: "Responsive Systems",
-      description: "Fluid multi-device layouts engineered with CSS Grid and Flexbox, with zero layout shift and smooth transitions."
+      description: "Fluid multi-device layouts engineered with CSS Grid and Flexbox, with zero layout shift, smooth transitions, and mobile-first architecture."
     },
     {
       icon: <IconShieldCheck size={18} />,
@@ -77,14 +77,10 @@ function About() {
           </h2>
           <div className="about-body">
             <p>
-              I am a <strong>Senior UI Developer and Frontend Engineer</strong> based in Kolkata, India.
-              Over the past 7+ years, my core discipline has centered on turning creative design visions
-              into production-ready web interfaces with uncompromised fidelity, clean semantic HTML5,
-              and maintainable CSS architecture.
+              I am a <strong>Senior UI Developer and Frontend Engineer</strong> based in Kolkata, India. Throughout my career, my core discipline has centered on turning creative design visions into production-ready web interfaces with uncompromised fidelity, clean semantic HTML5, and maintainable CSS architecture.
             </p>
             <p>
-              My sweet spot is at the intersection of design and code — transforming Figma and Photoshop
-              files into responsive, accessible, cross-browser compliant applications that load fast and feel effortless.
+              My sweet spot is at the intersection of design and code — transforming Figma and Photoshop files into responsive, accessible, cross-browser compliant applications that load fast and feel effortless. I also build foundational React components and modular UI interfaces with precision.
             </p>
           </div>
 
@@ -92,9 +88,9 @@ function About() {
             <span className="about-spec-tag">Figma to HTML</span>
             <span className="about-spec-tag">Photoshop to Code</span>
             <span className="about-spec-tag">Pixel-Perfect UI</span>
-            <span className="about-spec-tag">CSS Grid & Flexbox</span>
-            <span className="about-spec-tag">WCAG 2.1 AA</span>
-            <span className="about-spec-tag">Zero Layout Shift</span>
+            <span className="about-spec-tag">Responsive Systems</span>
+            <span className="about-spec-tag">React.js (Basics)</span>
+            <span className="about-spec-tag">Claude Code & Codex</span>
           </div>
         </div>
 
@@ -131,7 +127,7 @@ function About() {
             <div className="about-terminal-body">
               <div className="terminal-line">
                 <span className="t-prompt">$</span>
-                <span className="t-cmd">claude-code scaffold --component "ResponsiveHero"</span>
+                <span className="t-cmd">claude "scaffold responsive layout from figma tokens"</span>
               </div>
               <div className="terminal-response">
                 <span className="t-success">✔</span>
@@ -139,7 +135,7 @@ function About() {
               </div>
               <div className="terminal-line">
                 <span className="t-prompt">$</span>
-                <span className="t-cmd">codex inspect-layout --check-wcag</span>
+                <span className="t-cmd">codex debug --check-overflows --fix-breakpoints</span>
               </div>
               <div className="terminal-response">
                 <span className="t-success">✔</span>
@@ -148,24 +144,25 @@ function About() {
             </div>
           </div>
 
+          {/* 3 Metric Pills below terminal */}
           <div className="about-ai-metrics-row">
             <div className="about-ai-metric">
               <strong>3x</strong>
-              <span>Velocity Scaffolding</span>
+              <span>Velocity Boost</span>
             </div>
             <div className="about-ai-metric">
-              <strong>0</strong>
-              <span>Fidelity Compromise</span>
+              <strong>0 Shift</strong>
+              <span>CLS Guard</span>
             </div>
             <div className="about-ai-metric">
               <strong>100%</strong>
-              <span>Human Verified</span>
+              <span>WCAG Verified</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Craft Pillars 4-Column Row */}
+      {/* Craft Pillars Grid */}
       <div className="about-pillars-grid" aria-label="Core Engineering Disciplines">
         {craftPillars.map((pillar) => (
           <div className="about-pillar-card" key={pillar.title}>
@@ -176,7 +173,7 @@ function About() {
         ))}
       </div>
 
-      {/* Upgraded Modern Bento Stats Grid */}
+      {/* Key Metrics / Bento Row */}
       <div className="about-stats-bento" aria-label="Experience statistics">
         {stats.map((stat) => (
           <article

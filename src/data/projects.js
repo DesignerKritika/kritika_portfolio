@@ -7,7 +7,7 @@ const projects = [
     description:
       "Developed responsive celestial web application interfaces, interactive zodiac trait discovery forms, mobile-first layouts, and smooth carousel transitions.",
     type: "Astrology & Lifestyle Web App",
-    technologies: ["HTML5", "CSS3", "Bootstrap 5", "JavaScript", "Responsive UI"],
+    technologies: ["HTML5", "CSS3", "Bootstrap 5", "JavaScript", "Responsive UI"]
   },
   {
     id: 18,
@@ -19,7 +19,7 @@ const projects = [
     description:
       "Crafted playful party entertainer web layouts with custom CSS animations and responsive booking forms. Scaffolding, layout generation, and interactive components were accelerated and debugged using Claude Code.",
     type: "Kids Entertainment & Events",
-    technologies: ["HTML5", "Tailwind CSS", "JavaScript", "Claude Code", "AI Website Generation"],
+    technologies: ["HTML5", "Tailwind CSS", "JavaScript", "Claude Code", "AI Website Generation"]
   },
   {
     id: 1,
@@ -31,7 +31,7 @@ const projects = [
     description:
       "Developed high-traffic aviation career portal interfaces and responsive search filters. Utilized Claude Code and OpenAI Codex for rapid component generation, prompt-driven code authoring, and cross-browser debugging.",
     type: "Aviation & Career Portal",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Claude Code", "OpenAI Codex", "AI Debugging"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "Claude Code", "OpenAI Codex", "AI Debugging"]
   },
   {
     id: 2,
@@ -41,7 +41,7 @@ const projects = [
     description:
       "Engineered high-usability legal process serving web application with cross-browser compatibility and optimized mobile navigation.",
     type: "Legal & Logistics Portal",
-    technologies: ["HTML5", "SASS", "Bootstrap", "JavaScript", "Responsive UI"],
+    technologies: ["HTML5", "SASS", "Bootstrap", "JavaScript", "Responsive UI"]
   },
   {
     id: 3,
@@ -51,7 +51,7 @@ const projects = [
     description:
       "Built clean, structured technical support dashboard layouts and responsive customer ticket submission forms.",
     type: "Enterprise Support System",
-    technologies: ["HTML5", "CSS3", "Flexbox", "JavaScript", "DOM Manipulation"],
+    technologies: ["HTML5", "CSS3", "Flexbox", "JavaScript", "DOM Manipulation"]
   },
   {
     id: 4,
@@ -61,7 +61,7 @@ const projects = [
     description:
       "Created responsive membership registration portals, custom pricing tier cards, and accessible form input validation components.",
     type: "Membership & Registration",
-    technologies: ["HTML5", "CSS3", "Bootstrap 5", "JavaScript", "Responsive CSS"],
+    technologies: ["HTML5", "CSS3", "Bootstrap 5", "JavaScript", "Responsive CSS"]
   },
   {
     id: 5,
@@ -71,7 +71,7 @@ const projects = [
     description:
       "Coded mobile-friendly contractor showcase pages, project gallery grids, and interactive lead capture forms.",
     type: "Home Renovation & Contracting",
-    technologies: ["HTML5", "CSS Grid", "Bootstrap", "JavaScript", "SASS"],
+    technologies: ["HTML5", "CSS Grid", "Bootstrap", "JavaScript", "SASS"]
   },
   {
     id: 6,
@@ -81,7 +81,7 @@ const projects = [
     description:
       "Developed responsive website interfaces using HTML5, CSS3, and Bootstrap grid layouts optimized for fast mobile page performance.",
     type: "Healthcare & Dental UI",
-    technologies: ["HTML5", "CSS3", "Bootstrap 5", "Flexbox", "Performance Optimization"],
+    technologies: ["HTML5", "CSS3", "Bootstrap 5", "Flexbox", "Performance Optimization"]
   },
   {
     id: 7,
@@ -91,7 +91,7 @@ const projects = [
     description:
       "Built custom e-commerce product layouts, shopping cart UI sections, and interactive culinary brand showcase grids.",
     type: "E-Commerce & Culinary Brand",
-    technologies: ["HTML5", "Tailwind CSS", "JavaScript", "E-Commerce UI", "Responsive CSS"],
+    technologies: ["HTML5", "Tailwind CSS", "JavaScript", "E-Commerce UI", "Responsive CSS"]
   },
   {
     id: 8,
@@ -101,7 +101,7 @@ const projects = [
     description:
       "Created vibrant food product catalog layouts and responsive promotional banners with thorough cross-browser testing.",
     type: "Gourmet Food & Specialty Brand",
-    technologies: ["HTML5", "CSS3", "SASS", "JavaScript", "Mobile-First"],
+    technologies: ["HTML5", "CSS3", "SASS", "JavaScript", "Mobile-First"]
   },
   {
     id: 9,
@@ -111,7 +111,7 @@ const projects = [
     description:
       "Developed clean, elegant e-commerce product card grids, navigation menus, and responsive checkout user flows.",
     type: "Artisan E-Commerce Store",
-    technologies: ["HTML5", "CSS3", "Bootstrap", "JavaScript", "E-Commerce UI"],
+    technologies: ["HTML5", "CSS3", "Bootstrap", "JavaScript", "E-Commerce UI"]
   },
   {
     id: 10,
@@ -121,7 +121,7 @@ const projects = [
     description:
       "Developed responsive industrial machinery layout pages, product specs tables, and mobile-friendly equipment showcases.",
     type: "Industrial & Mining Machinery",
-    technologies: ["HTML5", "CSS3", "Bootstrap 5", "JavaScript", "Responsive UI"],
+    technologies: ["HTML5", "CSS3", "Bootstrap 5", "JavaScript", "Responsive UI"]
   },
   {
     id: 11,
@@ -131,7 +131,7 @@ const projects = [
     description:
       "Built high-impact video showcase layouts, media grids, and interactive video player UI components.",
     type: "Media & Video Production",
-    technologies: ["HTML5", "CSS3", "JavaScript", "SASS", "Video UI"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "SASS", "Video UI"]
   },
   {
     id: 12,
@@ -143,7 +143,7 @@ const projects = [
     description:
       "Engineered international logistics and trade website with fluid inquiry forms and quotation components. Leveraged Claude Code for automated code authoring, responsive flexbox layout generation, and CSS debugging.",
     type: "Global Trade & Logistics",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Claude Code", "AI Debugging"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "Claude Code", "AI Debugging"]
   },
   {
     id: 13,
@@ -153,7 +153,7 @@ const projects = [
     description:
       "Translated bio-tech design mockups into semantic, SEO-friendly HTML5 pages with structured navigation components.",
     type: "Bio-Tech & Healthcare",
-    technologies: ["HTML5", "SASS", "JavaScript", "SEO-Friendly HTML", "Responsive UI"],
+    technologies: ["HTML5", "SASS", "JavaScript", "SEO-Friendly HTML", "Responsive UI"]
   },
   {
     id: 14,
@@ -165,18 +165,8 @@ const projects = [
     description:
       "Built modern digital resource directory with dynamic category filters and responsive article cards. Developed and debugged using Claude Code and OpenAI Codex for rapid HTML/CSS generation and responsive bug fixes.",
     type: "Digital Resource & Info Hub",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Claude Code", "OpenAI Codex"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "Claude Code", "OpenAI Codex"]
   },
-  /* {
-    id: 15,
-    name: "Play Factory",
-    url: "https://playfactorynew.dev.webartmax.com/",
-    image: "/images/playfactory.jpg",
-    description:
-      "Developed rich dynamic UI elements, GSAP scroll animations, media carousels, and interactive web application pages.",
-    type: "Entertainment & Gaming Platform",
-    technologies: ["HTML5", "CSS3", "GSAP Animations", "JavaScript", "Interactive UI"],
-  }, */
   {
     id: 16,
     name: "All Love Collections",
@@ -185,8 +175,8 @@ const projects = [
     description:
       "Engineered luxury natural wellness and vegan spa website layouts, appointment booking workflows, and responsive service showcases.",
     type: "Luxury Spa & Natural Wellness",
-    technologies: ["HTML5", "CSS3", "Bootstrap 5", "JavaScript", "Responsive UI"],
-  },
+    technologies: ["HTML5", "CSS3", "Bootstrap 5", "JavaScript", "Responsive UI"]
+  }
 ];
 
 export default projects;

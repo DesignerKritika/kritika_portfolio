@@ -17,7 +17,43 @@ function App() {
 
   useEffect(() => {
     const lenis = new Lenis({ autoRaf: true });
-    return () => lenis.destroy();
+
+    function handleContextMenu(e) {
+      const target = e.target;
+      if (
+        target instanceof HTMLElement &&
+        (target.tagName === "INPUT" ||
+          target.tagName === "TEXTAREA" ||
+          target.isContentEditable ||
+          target.closest("input, textarea, [contenteditable='true'], .allow-select"))
+      ) {
+        return;
+      }
+      e.preventDefault();
+    }
+
+    function handleDragStart(e) {
+      const target = e.target;
+      if (
+        target instanceof HTMLElement &&
+        (target.tagName === "INPUT" ||
+          target.tagName === "TEXTAREA" ||
+          target.isContentEditable ||
+          target.closest("input, textarea, [contenteditable='true'], .allow-select"))
+      ) {
+        return;
+      }
+      e.preventDefault();
+    }
+
+    document.addEventListener("contextmenu", handleContextMenu);
+    document.addEventListener("dragstart", handleDragStart);
+
+    return () => {
+      lenis.destroy();
+      document.removeEventListener("contextmenu", handleContextMenu);
+      document.removeEventListener("dragstart", handleDragStart);
+    };
   }, []);
 
   return (

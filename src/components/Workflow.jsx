@@ -108,7 +108,7 @@ function Workflow() {
         </div>
         <div className="workflow-intro-copy">
           <p>
-            Combining <strong>7+ years of frontend discipline</strong> with <strong>Claude Code (CLI)</strong> and{" "}
+            Combining <strong>deep frontend engineering discipline</strong> with <strong>Claude Code (CLI)</strong> and{" "}
             <strong>OpenAI Codex</strong>. This dual-engine approach allows me to scaffold pages at lightning speed,
             diagnose elusive layout bugs immediately, and hand-craft pixel-perfect user experiences with zero compromises.
           </p>

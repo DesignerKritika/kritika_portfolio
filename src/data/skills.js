@@ -75,18 +75,18 @@ export const aiWorkflowData = {
 
 const skills = [
   {
-    group: "Frontend Development",
-    highlight: false,
+    group: "Core Frontend Technologies",
+    highlight: true,
     badge: "Core Stack",
     items: [
       { name: "HTML5 (Semantic & SEO)", highlight: true },
       { name: "CSS3 & Modern Layouts", highlight: true },
       { name: "JavaScript (ES6+)", highlight: true },
-      { name: "React", highlight: false, hidden: true },
+      { name: "React.js (Basics & Components)", highlight: true },
+      { name: "Tailwind CSS", highlight: true },
       { name: "Bootstrap 5", highlight: false },
-      { name: "Tailwind CSS", highlight: false },
       { name: "SASS / SCSS", highlight: false },
-      { name: "GSAP Animations", highlight: false },
+      { name: "GSAP Animations", highlight: false }
     ]
   },
   {
@@ -95,26 +95,27 @@ const skills = [
     badge: "Design to Code",
     items: [
       { name: "Responsive Web Design", highlight: true },
-      { name: "Figma to HTML", highlight: true },
+      { name: "Figma to HTML / Code", highlight: true },
       { name: "Photoshop to HTML", highlight: false },
-      { name: "Pixel Perfect UI", highlight: true },
-      { name: "UI Architecture", highlight: false },
-      { name: "Cross Browser Compatibility", highlight: false },
-      { name: "Web Accessibility", highlight: false },
-      { name: "WCAG Standards", highlight: false },
+      { name: "Pixel-Perfect UI", highlight: true },
+      { name: "UI Architecture & Layouts", highlight: false },
+      { name: "Cross-Browser Compatibility", highlight: true },
+      { name: "Web Accessibility (WCAG 2.1 AA)", highlight: true },
+      { name: "Zero Layout Shift (CLS)", highlight: true }
     ]
   },
   {
     group: "Tools & Ecosystem",
     highlight: false,
-    badge: "Tooling",
+    badge: "Tooling & Workflow",
     items: [
-      { name: "Git & GitHub", highlight: false },
-      { name: "VS Code", highlight: false },
-      { name: "Adobe Photoshop", highlight: false },
+      { name: "Claude Code CLI", highlight: true },
+      { name: "OpenAI Codex", highlight: true },
+      { name: "Git & GitHub", highlight: true },
+      { name: "VS Code & Terminal CLI", highlight: false },
       { name: "Figma", highlight: false },
-      { name: "Claude AI", highlight: true },
-      { name: "Vite / Modern Bundlers", highlight: false },
+      { name: "Adobe Photoshop", highlight: false },
+      { name: "Vite & Modern Bundlers", highlight: false }
     ]
   }
 ];

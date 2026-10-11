@@ -53,10 +53,17 @@ function Contact() {
             </span>
             <IconArrowUpRight size={24} className="contact-link-arrow" />
           </a>
-          <a href="https://github.com/" target="_blank" rel="noreferrer" title="GitHub Profile">
+          <a href="https://github.com/DesignerKritika" target="_blank" rel="noreferrer" title="GitHub Profile">
             <span className="contact-link-content">
               <span className="contact-link-title">GitHub</span>
-              <span className="contact-link-value">github.com</span>
+              <span className="contact-link-value">github.com/DesignerKritika</span>
+            </span>
+            <IconArrowUpRight size={24} className="contact-link-arrow" />
+          </a>
+          <a href="https://wa.me/919804926294" target="_blank" rel="noreferrer" title="Chat on WhatsApp">
+            <span className="contact-link-content">
+              <span className="contact-link-title">WhatsApp</span>
+              <span className="contact-link-value">Direct Message (+91 98049 26294)</span>
             </span>
             <IconArrowUpRight size={24} className="contact-link-arrow" />
           </a>

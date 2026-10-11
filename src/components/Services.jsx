@@ -1,4 +1,4 @@
-import { IconArrowRight, IconSparkle, IconFileText, IconCheck } from "./Icons.jsx";
+import { IconArrowRight, IconSparkle, IconFileText } from "./Icons.jsx";
 
 function Services() {
   const services = [
@@ -17,7 +17,7 @@ function Services() {
     {
       title: "Figma & Photoshop to HTML",
       subtitle: "Pixel-Perfect Conversion",
-      text: "Flawless 1:1 translation of Figma designs and Photoshop mockups into clean, accessible, semantic HTML5 and modern CSS3/SCSS.",
+      text: "Flawless 1:1 translation of Figma designs and Photoshop mockups into clean, accessible, semantic HTML5, modern CSS3/SCSS, and foundational React components.",
       highlight: false
     },
     {

@@ -3,7 +3,7 @@ import { IconArrowUp } from "./Icons.jsx";
 function Footer() {
   return (
     <footer className="footer">
-      <p>&copy; 2026 Kritika Roy</p>
+      <p>&copy; Kritika Roy</p>
       <div className="footer-links">
         <a href="mailto:kritika.roy372@gmail.com" title="Send email">
           Email: kritika.roy372@gmail.com

@@ -80,6 +80,17 @@ button {
 html,
 body,
 .app {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+input,
+textarea,
+[contenteditable="true"],
+.allow-select {
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
@@ -87,22 +98,19 @@ body,
   -webkit-touch-callout: default;
 }
 
-input,
-textarea {
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
-}
-
-img {
-  display: block;
-  max-width: 100%;
+img,
+svg,
+a {
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
   user-drag: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -113,12 +121,26 @@ img {
 }
 
 ::selection {
-  background: rgba(14, 165, 233, 0.22);
-  color: inherit;
+  background: transparent;
 }
 
 ::-moz-selection {
-  background: rgba(14, 165, 233, 0.22);
+  background: transparent;
+}
+
+input::selection,
+textarea::selection,
+[contenteditable="true"]::selection,
+.allow-select::selection {
+  background: rgba(14, 165, 233, 0.25);
+  color: inherit;
+}
+
+input::-moz-selection,
+textarea::-moz-selection,
+[contenteditable="true"]::-moz-selection,
+.allow-select::-moz-selection {
+  background: rgba(14, 165, 233, 0.25);
   color: inherit;
 }
 
